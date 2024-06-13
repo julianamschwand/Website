@@ -69,6 +69,20 @@ document.addEventListener('DOMContentLoaded', function() {
         let MouseOverGenres = false;
         PlaceGenres(10)
 
+        BurgerIcon.addEventListener('click', function() {
+            if (window.getComputedStyle(SidebarSlideout).width === '300px') {
+                SidebarSlideout.style.width = '55px'
+                for (let i = 0; i < SidebarGenres.length; i++) {
+                    SidebarGenres[i].style.left = '-230px';
+                }
+            } else {
+                SidebarSlideout.style.width = '300px'
+                for (let i = 0; i < SidebarGenres.length; i++) {
+                    SidebarGenres[i].style.left = '70px';
+                }
+            }
+        })
+
         for (let i = 0; i < SidebarGenres.length; i++) {
                 SidebarGenres[i].addEventListener('mouseover', function() {
                     MouseOverGenres = true;
