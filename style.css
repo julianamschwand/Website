@@ -201,7 +201,8 @@ img {
     font-size: large;
 }
 
-#more-pictures-arrow1, #more-pictures-arrow2, #more-pictures-arrow3, #more-pictures-text1, #more-pictures-text2, #more-pictures-text3{
+#more-pictures-arrow1, #more-pictures-arrow2, #more-pictures-arrow3, 
+#more-pictures-text1, #more-pictures-text2, #more-pictures-text3{
     height: 15px;
     display: inline-block;
     transition: transform 0.25s ease;
@@ -315,5 +316,9 @@ tr, td {
     .personal-favorite #game-text{
         transform: translateY(0%);
         text-align: center;
+    }
+    
+    main {
+        width: 80%;
     }
 }
