@@ -237,6 +237,10 @@ img {
     transition: 0.25s ease;
 }
 
+.sidebar-genre:visited {
+    color: white;
+}
+
 #sidebar-divider {
     background-color: white;
     width: 215px;
@@ -265,6 +269,10 @@ tr, td {
 
 .image-container {
     object-fit: contain;
+}
+
+a:visited {
+    color: rgb(179, 179, 179);
 }
 
 @media (max-aspect-ratio: 1/1) {
